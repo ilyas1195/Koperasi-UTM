@@ -1,0 +1,15 @@
+Options -Indexes
+ServerSignature Off
+
+<FilesMatch "\.(sql|md|json)$">
+    Require all denied
+</FilesMatch>
+
+<Files "config/database.php">
+    Require all denied
+</Files>
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]

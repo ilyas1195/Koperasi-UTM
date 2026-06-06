@@ -1,0 +1,67 @@
+<nav class="navbar" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.php">
+            <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
+                <rect width="36" height="36" rx="8" fill="#D4AF37"/>
+                <text x="18" y="24" text-anchor="middle" fill="#0F5132" font-size="18" font-weight="bold" font-family="Poppins, sans-serif">K</text>
+            </svg>
+            <span class="brand-name">KOPMA</span>
+            <span class="brand-dot">.</span>
+        </a>
+
+        <div class="nav-menu" id="navMenu">
+            <ul class="nav-list">
+                <li><a href="index.php" class="nav-link-custom <?= basename($_SERVER['PHP_SELF']) == 'index.php' ? 'active' : '' ?>">Beranda</a></li>
+                <li><a href="profil.php" class="nav-link-custom <?= basename($_SERVER['PHP_SELF']) == 'profil.php' ? 'active' : '' ?>">Profil</a></li>
+                <li><a href="katalog.php" class="nav-link-custom <?= basename($_SERVER['PHP_SELF']) == 'katalog.php' ? 'active' : '' ?>">Katalog</a></li>
+                <li><a href="kontak.php" class="nav-link-custom <?= basename($_SERVER['PHP_SELF']) == 'kontak.php' ? 'active' : '' ?>">Kontak</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="keranjang.php" class="cart-btn" id="cartBtn">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count" id="cartBadge">0</span>
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navMenu.classList.toggle('show');
+            document.body.classList.toggle('nav-open');
+        });
+        document.querySelectorAll('.nav-link-custom').forEach(function(link) {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('show');
+                document.body.classList.remove('nav-open');
+            });
+        });
+    }
+    updateCartBadge();
+});
+
+function updateCartBadge() {
+    fetch('ajax_cart_count.php')
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+            var badge = document.getElementById('cartBadge');
+            if (badge) {
+                badge.textContent = data.count;
+                badge.style.display = data.count > 0 ? 'flex' : 'none';
+            }
+        });
+}
+</script>
