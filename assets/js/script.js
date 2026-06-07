@@ -1,5 +1,5 @@
 /* ==================================================
-   KOPMA UTM — Main JavaScript
+   Koperasi UTM — Main JavaScript
    ================================================== */
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -1,7 +1,7 @@
 <?php
 require_once 'config/database.php';
 require_once 'includes/functions.php';
-$title = 'Profil KOPMA UTM';
+$title = 'Profil Koperasi UTM';
 include 'includes/header.php';
 ?>
 
@@ -12,7 +12,7 @@ include 'includes/header.php';
             <span class="sep"><i class="fas fa-chevron-right"></i></span>
             <span>Profil</span>
         </div>
-        <h1 data-aos="fade-up">Profil KOPMA UTM</h1>
+        <h1 data-aos="fade-up">Profil Koperasi UTM</h1>
         <p data-aos="fade-up" data-aos-delay="40">Mengenal lebih dekat Koperasi Mahasiswa Universitas Trunodjoyo Madura</p>
     </div>
 </section>
@@ -28,9 +28,9 @@ include 'includes/header.php';
             </div>
             <div class="col-lg-6 offset-lg-1">
                 <div class="section-label">Tentang</div>
-                <h3 style="font-family:var(--font-heading);font-weight:700;color:var(--primary-dark);margin-bottom:12px;">KOPMA UTM</h3>
-                <p style="color:var(--text-light);line-height:1.8;">Koperasi Mahasiswa Universitas Trunodjoyo Madura (KOPMA UTM) adalah organisasi koperasi yang didirikan oleh mahasiswa Universitas Trunodjoyo Madura. Berdiri sejak tahun 2010, KOPMA UTM berkomitmen untuk melayani kebutuhan mahasiswa, dosen, tenaga kependidikan, dan masyarakat sekitar kampus.</p>
-                <p style="color:var(--text-light);line-height:1.8;">Dengan semangat kebersamaan dan kekeluargaan, KOPMA UTM terus berkembang menjadi koperasi mahasiswa yang profesional, terpercaya, dan menjadi kebanggaan almamater.</p>
+                <h3 style="font-family:var(--font-heading);font-weight:700;color:var(--primary-dark);margin-bottom:12px;">Koperasi UTM</h3>
+                <p style="color:var(--text-light);line-height:1.8;">Koperasi Mahasiswa Universitas Trunodjoyo Madura (Koperasi UTM) adalah organisasi koperasi yang didirikan oleh mahasiswa Universitas Trunodjoyo Madura. Berdiri sejak tahun 2010, Koperasi UTM berkomitmen untuk melayani kebutuhan mahasiswa, dosen, tenaga kependidikan, dan masyarakat sekitar kampus.</p>
+                <p style="color:var(--text-light);line-height:1.8;">Dengan semangat kebersamaan dan kekeluargaan, Koperasi UTM terus berkembang menjadi koperasi mahasiswa yang profesional, terpercaya, dan menjadi kebanggaan almamater.</p>
             </div>
         </div>
 
@@ -44,8 +44,8 @@ include 'includes/header.php';
             </div>
             <div class="col-lg-8 mx-auto">
                 <div style="background:var(--surface);border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow-xs);border:1px solid var(--border);border-left:4px solid var(--premium);">
-                    <p style="color:var(--text-light);line-height:1.9;margin-bottom:14px;">KOPMA UTM didirikan pada tahun 2010 oleh sekelompok mahasiswa Universitas Trunodjoyo Madura yang memiliki kepedulian terhadap kebutuhan ekonomi mahasiswa. Berawal dari sebuah inisiatif sederhana untuk menyediakan alat tulis dan kebutuhan pokok sehari-hari, KOPMA UTM kini telah berkembang menjadi koperasi mahasiswa yang menyediakan berbagai produk retail, konsinyasi, dan kebutuhan lainnya.</p>
-                    <p style="color:var(--text-light);line-height:1.9;margin-bottom:0;">Seiring berjalannya waktu, KOPMA UTM terus berinovasi dan beradaptasi dengan kebutuhan mahasiswa. Dengan dukungan penuh dari universitas dan seluruh anggota, KOPMA UTM berkomitmen untuk menjadi koperasi mahasiswa terdepan yang melayani dengan sepenuh hati.</p>
+                    <p style="color:var(--text-light);line-height:1.9;margin-bottom:14px;">Koperasi UTM didirikan pada tahun 2010 oleh sekelompok mahasiswa Universitas Trunodjoyo Madura yang memiliki kepedulian terhadap kebutuhan ekonomi mahasiswa. Berawal dari sebuah inisiatif sederhana untuk menyediakan alat tulis dan kebutuhan pokok sehari-hari, Koperasi UTM kini telah berkembang menjadi koperasi mahasiswa yang menyediakan berbagai produk retail, konsinyasi, dan kebutuhan lainnya.</p>
+                    <p style="color:var(--text-light);line-height:1.9;margin-bottom:0;">Seiring berjalannya waktu, Koperasi UTM terus berinovasi dan beradaptasi dengan kebutuhan mahasiswa. Dengan dukungan penuh dari universitas dan seluruh anggota, Koperasi UTM berkomitmen untuk menjadi koperasi mahasiswa terdepan yang melayani dengan sepenuh hati.</p>
                 </div>
             </div>
         </div>
@@ -84,16 +84,16 @@ include 'includes/header.php';
                 <div class="section-head">
                     <div class="section-label">Galeri</div>
                     <h2 class="section-title">Galeri Kegiatan</h2>
-                    <p class="section-sub">Dokumentasi kegiatan dan aktivitas KOPMA UTM</p>
+                    <p class="section-sub">Dokumentasi kegiatan dan aktivitas Koperasi UTM</p>
                 </div>
             </div>
             <div class="col-12">
                 <div class="gallery-grid">
-                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Kegiatan KOPMA</span></div></div>
-                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Kegiatan KOPMA</span></div></div>
-                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Kegiatan KOPMA</span></div></div>
-                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Kegiatan KOPMA</span></div></div>
-                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Kegiatan KOPMA</span></div></div>
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Kegiatan Koperasi</span></div></div>
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Kegiatan Koperasi</span></div></div>
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Kegiatan Koperasi</span></div></div>
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Kegiatan Koperasi</span></div></div>
+                    <div class="gallery-item"><div class="gallery-placeholder"><i class="fas fa-image"></i><span>Kegiatan Koperasi</span></div></div>
                 </div>
             </div>
         </div>

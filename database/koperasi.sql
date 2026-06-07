@@ -1,5 +1,5 @@
 -- ==================================================
--- DATABASE KOPMA UTM
+-- DATABASE Koperasi UTM
 -- Katalog Produk Koperasi Mahasiswa Universitas Trunodjoyo Madura
 -- ==================================================
 

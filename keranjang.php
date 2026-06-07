@@ -6,7 +6,7 @@ if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
 }
 
-$title = 'Keranjang Belanja - KOPMA UTM';
+$title = 'Keranjang Belanja - Koperasi UTM';
 include 'includes/header.php';
 ?>
 

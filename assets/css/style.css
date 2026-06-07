@@ -1,5 +1,5 @@
 /* ==================================================
-   KOPMA UTM — Katalog Digital Premium
+   Koperasi UTM — Katalog Digital Premium
    Koperasi Mahasiswa Universitas Trunodjoyo Madura
    ================================================== */
 
@@ -35,8 +35,8 @@
 
     --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --font-body: 'Poppins', system-ui, -apple-system, sans-serif;
-    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Montserrat', system-ui, -apple-system, sans-serif;
 }
 
 /* ---- Reset ---- */
@@ -78,6 +78,8 @@ ul { list-style: none; padding: 0; margin: 0; }
 .loading-logo {
     margin-bottom: 20px;
     animation: pulse-logo 1.4s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
 }
 @keyframes pulse-logo {
     0%, 100% { transform: scale(1); opacity: 1; }
@@ -1302,7 +1304,7 @@ ul { list-style: none; padding: 0; margin: 0; }
     transition: var(--transition);
 }
 .btn-admin-edit:hover { background: #0d6efd; color: white; }
-.btn-admin-del {
+.btn-admin-delete {
     padding: 5px 12px;
     background: rgba(220,53,69,0.08);
     color: #dc3545;
@@ -1312,7 +1314,7 @@ ul { list-style: none; padding: 0; margin: 0; }
     cursor: pointer;
     transition: var(--transition);
 }
-.btn-admin-del:hover { background: #dc3545; color: white; }
+.btn-admin-delete:hover { background: #dc3545; color: white; }
 .chart-card {
     background: var(--surface);
     border-radius: var(--radius-lg);
@@ -1320,6 +1322,102 @@ ul { list-style: none; padding: 0; margin: 0; }
     box-shadow: var(--shadow-xs);
     border: 1px solid var(--border);
 }
+
+/* ---- Admin additional (matching PHP class names) ---- */
+.admin-stat-card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 22px;
+    box-shadow: var(--shadow-xs);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+.admin-stat-card:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
+.admin-stat-number { font-size: 26px; font-weight: 800; color: var(--primary-dark); font-family: var(--font-heading); }
+.admin-stat-icon.blue { background: rgba(13,110,253,0.08); color: #0d6efd; }
+.admin-stat-icon.red { background: rgba(220,53,69,0.08); color: #dc3545; }
+
+.admin-header {
+    background: var(--surface);
+    padding: 14px 28px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+}
+.admin-header h4 { font-weight: 700; color: var(--primary-dark); margin: 0; font-size: 18px; }
+
+.admin-table-wrapper {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xs);
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.btn-primary-custom {
+    background: var(--primary);
+    color: white; border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-flex; align-items: center; gap: 6px;
+}
+.btn-primary-custom:hover { background: var(--primary-dark); color: white; }
+
+.btn-outline-custom {
+    background: transparent;
+    color: var(--text-light);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-flex; align-items: center; gap: 6px;
+}
+.btn-outline-custom:hover { background: var(--surface-alt); color: var(--primary-dark); }
+
+.modal-content-custom {
+    border: none;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+}
+.modal-header-custom {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+}
+.modal-header-custom .modal-title { font-weight: 700; color: var(--primary-dark); font-family: var(--font-heading); }
+
+.chart-wrapper {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-xs);
+    border: 1px solid var(--border);
+}
+
+.product-thumb {
+    width: 40px; height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+    background: var(--surface-alt);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+}
+.btn-login:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(15,81,50,0.25); }
+
+.sidebar-toggle { display: flex; align-items: center; justify-content: center; }
 
 /* ---- Responsive ---- */
 @media (max-width: 991.98px) {

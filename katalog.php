@@ -2,7 +2,7 @@
 require_once 'config/database.php';
 require_once 'includes/functions.php';
 
-$title = 'Katalog Produk KOPMA UTM';
+$title = 'Katalog Produk Koperasi UTM';
 include 'includes/header.php';
 
 $semua_produk = searchProduk($pdo, '', 'semua', 'terbaru');
@@ -16,7 +16,7 @@ $semua_produk = searchProduk($pdo, '', 'semua', 'terbaru');
             <span>Katalog</span>
         </div>
         <h1 data-aos="fade-up">Katalog Produk</h1>
-        <p data-aos="fade-up" data-aos-delay="40">Temukan kebutuhan Anda di KOPMA UTM</p>
+        <p data-aos="fade-up" data-aos-delay="40">Temukan kebutuhan Anda di Koperasi UTM</p>
     </div>
 </section>
 

@@ -8,11 +8,8 @@
                 <div class="col-lg-4" data-aos="fade-up">
                     <div class="footer-brand">
                         <div class="footer-logo">
-                            <svg width="40" height="40" viewBox="0 0 36 36" fill="none">
-                                <rect width="36" height="36" rx="8" fill="#D4AF37"/>
-                                <text x="18" y="24" text-anchor="middle" fill="#0A3D25" font-size="18" font-weight="bold" font-family="Poppins, sans-serif">K</text>
-                            </svg>
-                            <span>KOPMA UTM</span>
+                            <img src="assets/img/logo-koperasi.png" alt="Koperasi UTM" width="40" height="40" style="border-radius: 8px;">
+                            <span>Koperasi UTM</span>
                         </div>
                         <p>Koperasi Mahasiswa Universitas Trunodjoyo Madura — melayani kebutuhan mahasiswa dengan profesional, terpercaya, dan penuh kebersamaan.</p>
                         <div class="footer-social">
@@ -53,13 +50,13 @@
     </div>
     <div class="footer-bottom">
         <div class="container">
-            <p>&copy; <?= date('Y') ?> KOPMA UTM. All rights reserved. <span class="footer-sep">•</span> Made with <i class="fas fa-heart" style="color: var(--accent);"></i> for UTM</p>
+            <p>&copy; <?= date('Y') ?> Koperasi UTM. All rights reserved. <span class="footer-sep">•</span> Made with <i class="fas fa-heart" style="color: var(--accent);"></i> for UTM</p>
         </div>
     </div>
 </footer>
 
 <div class="whatsapp-float" id="waFloat">
-    <a href="https://wa.me/6285727877235?text=Halo%20Admin%20KOPMA%20UTM%2C%20saya%20ingin%20bertanya%20mengenai%20produk" target="_blank" class="wa-link">
+    <a href="https://wa.me/6285727877235?text=Halo%20Admin%20Koperasi%20UTM%2C%20saya%20ingin%20bertanya%20mengenai%20produk" target="_blank" class="wa-link">
         <i class="fab fa-whatsapp"></i>
     </a>
 </div>

@@ -10,7 +10,7 @@ if (!$produk) {
     exit;
 }
 
-$title = htmlspecialchars($produk['nama_produk']) . ' - KOPMA UTM';
+$title = htmlspecialchars($produk['nama_produk']) . ' - Koperasi UTM';
 include 'includes/header.php';
 ?>
 

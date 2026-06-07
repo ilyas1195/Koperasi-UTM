@@ -7,6 +7,13 @@ if (isset($_SESSION['admin'])) {
 
 require_once '../config/database.php';
 
+// Auto-create default admin if table is empty
+$stmt = $pdo->query("SELECT COUNT(*) FROM admin");
+if ($stmt->fetchColumn() == 0) {
+    $hash = password_hash('admin', PASSWORD_BCRYPT);
+    $pdo->prepare("INSERT INTO admin (username, password) VALUES ('admin', ?)")->execute([$hash]);
+}
+
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -38,21 +45,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Admin - KOPMA UTM</title>
+    <title>Login Admin - Koperasi UTM</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link href="../assets/css/style.css" rel="stylesheet">
 </head>
 <body>
     <div class="admin-login">
-        <div class="admin-login-card" data-aos="fade-up">
+        <div class="admin-login-card">
             <div class="login-logo">
-                <svg width="56" height="56" viewBox="0 0 36 36" fill="none">
-                    <rect width="36" height="36" rx="8" fill="#D4AF37"/>
-                    <text x="18" y="24" text-anchor="middle" fill="#0F5132" font-size="18" font-weight="bold" font-family="Arial">K</text>
-                </svg>
+                <img src="../assets/img/logo-koperasi.png" alt="Koperasi UTM" width="56" height="56" style="border-radius: 8px;">
                 <h3>Panel Admin</h3>
-                <p>KOPMA Universitas Trunodjoyo Madura</p>
+                <p>Koperasi Universitas Trunodjoyo Madura</p>
             </div>
 
             <?php if ($error): ?>

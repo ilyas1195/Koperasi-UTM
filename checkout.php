@@ -20,7 +20,7 @@ $product_map = [];
 foreach ($products as $p) { $product_map[$p['id_produk']] = $p; }
 
 $total = 0;
-$pesan = "Halo Admin KOPMA UTM,\n\n";
+$pesan = "Halo Admin Koperasi UTM,\n\n";
 $pesan .= "Saya ingin memesan produk berikut:\n\n";
 
 $no = 1;
@@ -47,7 +47,7 @@ $wa_url = 'https://wa.me/' . $wa_number . '?text=' . urlencode($pesan);
 
 $_SESSION['cart'] = [];
 
-$title = 'Checkout - KOPMA UTM';
+$title = 'Checkout - Koperasi UTM';
 include 'includes/header.php';
 ?>
 

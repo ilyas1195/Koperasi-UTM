@@ -1,6 +1,6 @@
 <?php
 require_once 'config/database.php';
-$title = 'Kontak KOPMA UTM';
+$title = 'Kontak Koperasi UTM';
 include 'includes/header.php';
 ?>
 
@@ -12,7 +12,7 @@ include 'includes/header.php';
             <span>Kontak</span>
         </div>
         <h1 data-aos="fade-up">Hubungi Kami</h1>
-        <p data-aos="fade-up" data-aos-delay="40">Jangan ragu untuk menghubungi KOPMA UTM</p>
+        <p data-aos="fade-up" data-aos-delay="40">Jangan ragu untuk menghubungi Koperasi UTM</p>
     </div>
 </section>
 

@@ -1,7 +1,7 @@
 <?php
 require_once 'config/database.php';
 require_once 'includes/functions.php';
-$title = 'Katalog Produk KOPMA UTM';
+$title = 'Katalog Produk Koperasi UTM';
 $statistik = hitungStatistik($pdo);
 $produk_terbaru = getProdukTerbaru($pdo, 4);
 $kategori_utama = getKategori($pdo);
@@ -94,7 +94,7 @@ include 'includes/header.php';
                 <div class="about-text">
                     <div class="section-label">Tentang Kami</div>
                     <h3>Koperasi Mahasiswa <br>Universitas Trunodjoyo Madura</h3>
-                    <p>KOPMA UTM adalah koperasi mahasiswa yang berorientasi pada pelayanan mahasiswa, mendukung ekonomi kreatif mahasiswa, dan menyediakan berbagai kebutuhan sehari-hari dengan harga terjangkau dan kualitas terbaik.</p>
+                    <p>Koperasi UTM adalah koperasi mahasiswa yang berorientasi pada pelayanan mahasiswa, mendukung ekonomi kreatif mahasiswa, dan menyediakan berbagai kebutuhan sehari-hari dengan harga terjangkau dan kualitas terbaik.</p>
                     <div class="about-grid">
                         <div class="about-item"><i class="fas fa-hand-holding-heart"></i><span>Melayani Mahasiswa</span></div>
                         <div class="about-item"><i class="fas fa-lightbulb"></i><span>Ekonomi Kreatif</span></div>
@@ -155,7 +155,7 @@ include 'includes/header.php';
             <?php
             $kategori_data = [
                 ['nama' => 'Retail', 'ikon' => 'fas fa-store', 'desc' => 'Produk makanan dan minuman untuk kebutuhan sehari-hari mahasiswa.'],
-                ['nama' => 'Konsinyasi', 'ikon' => 'fas fa-handshake', 'desc' => 'Produk titipan UMKM dan mitra kerja sama KOPMA UTM.'],
+                ['nama' => 'Konsinyasi', 'ikon' => 'fas fa-handshake', 'desc' => 'Produk titipan UMKM dan mitra kerja sama Koperasi UTM.'],
                 ['nama' => 'Lainnya', 'ikon' => 'fas fa-box-open', 'desc' => 'Alat tulis, perlengkapan kuliah, aksesoris, dan peralatan pendukung.']
             ];
             foreach ($kategori_data as $index => $kat):
@@ -181,7 +181,7 @@ include 'includes/header.php';
         <div class="section-head" data-aos="fade-up">
             <div class="section-label">Produk</div>
             <h2 class="section-title">Produk Terbaru</h2>
-            <p class="section-sub">Lihat produk-produk terbaru yang tersedia di KOPMA UTM</p>
+            <p class="section-sub">Lihat produk-produk terbaru yang tersedia di Koperasi UTM</p>
         </div>
         <div class="row g-4">
             <?php if (empty($produk_terbaru)): ?>
@@ -235,7 +235,7 @@ include 'includes/header.php';
     <div class="container">
         <div class="cta-content text-center" data-aos="fade-up">
             <h2 class="cta-title">Lihat Seluruh Katalog Produk</h2>
-            <p class="cta-text">Jelajahi semua produk yang tersedia dan temukan kebutuhan Anda bersama KOPMA UTM</p>
+            <p class="cta-text">Jelajahi semua produk yang tersedia dan temukan kebutuhan Anda bersama Koperasi UTM</p>
             <a href="katalog.php" class="btn-cta">
                 <i class="fas fa-shopping-bag"></i>
                 Lihat Katalog Lengkap

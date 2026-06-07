@@ -1,11 +1,8 @@
 <nav class="navbar" id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="index.php">
-            <svg width="34" height="34" viewBox="0 0 36 36" fill="none">
-                <rect width="36" height="36" rx="8" fill="#D4AF37"/>
-                <text x="18" y="24" text-anchor="middle" fill="#0F5132" font-size="18" font-weight="bold" font-family="Poppins, sans-serif">K</text>
-            </svg>
-            <span class="brand-name">KOPMA</span>
+            <img src="assets/img/logo-koperasi.png" alt="Koperasi UTM" width="34" height="34" style="border-radius: 8px;">
+            <span class="brand-name">Koperasi UTM</span>
             <span class="brand-dot">.</span>
         </a>
 
